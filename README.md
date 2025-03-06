@@ -69,6 +69,8 @@ graph TD
 
 ## To-Do
 **6/3/2025** -- Find Scholarship Aggregate API's (Will)
+
 **6/3/2025** -- Start on Presentation Slides and Structure (Phoebe)
+
 **6/3/2025** -- Send Email to HeadAI (Aapo)
 
