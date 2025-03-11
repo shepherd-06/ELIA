@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1', 'localhost', '0.0.0.0',
-                 'https://elia-project-453221.lm.r.appspot.com',
+                 'elia-project-453221.lm.r.appspot.com',
                  'elia-project-453221@appspot.gserviceaccount.com'
                  ]
 
