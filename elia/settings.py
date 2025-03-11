@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-%ywl#7v=4$nc*ajp4tmvbf^re1%3z*qh=brp@5zfa*f!*_=m(c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1', 'localhost', '0.0.0.0',
+                 'https://elia-project-453221.lm.r.appspot.com',
+                 'elia-project-453221@appspot.gserviceaccount.com'
+                 ]
 
 
 # Application definition
@@ -40,6 +44,9 @@ INSTALLED_APPS = [
 
     # my app
     'crawl',
+
+    # pipy
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -76,22 +83,11 @@ WSGI_APPLICATION = 'elia.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'elia-project',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': 'mongodb://localhost:27017'
-        }
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
+   }
 }
 
 
