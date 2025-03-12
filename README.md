@@ -1,7 +1,7 @@
 
 # 🖥️ ECIU AI Hackathon Development Road Map 🖥️
 
-Student project by Will Mitchell, Phoebe, Aapo Piirainen and Ibtehaz. This project was done for the AI Hackathon hosted by ECIU from *Tampere University*. All ideas and logs for the project will be found on this *ReadMe* with the inclusion of dates, and no edits to past ideas/structure/development, this is a prototype app.
+Student project by Will Mitchell, Phoebe Iglesias, Aapo Piirainen and Ibtehaz. This project was done for the AI Hackathon hosted by ECIU from *Tampere University*. All ideas and logs for the project will be found on this *ReadMe* with the inclusion of dates, and no edits to past ideas/structure/development, this is a prototype app.
 
 # 🚀Timeline🚀
 
