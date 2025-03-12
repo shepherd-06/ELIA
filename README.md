@@ -25,7 +25,11 @@ yeah thats all.  So please share your GitHub and suggest a name for this project
 
 [<img src="https://cdn-icons-png.flaticon.com/256/5968/5968517.png">](https://docs.google.com/document/d/1-c7cVAG4mecptwa2-TT3cUULhtHwOCTfleN3dqVJXQc/edit?usp=sharing)
 
-**6/4/2025** -- Will Created ReadMe with a simple graph structure of our layout as a WIP
+**6/3/2025** -- Will Created ReadMe with a simple graph structure of our layout as a WIP
+
+**12/3/2025** -- Below is a link to our in person sketching of the architecture of the bot, with inttention of turning into a mermaid scheme, images include the thought process and the prototype user *Sarah* and her journey to find a learning opprotunity
+
+[<img src="https://cdn-icons-png.flaticon.com/256/5968/5968517.png">](https://drive.google.com/file/d/11jGrr-OuPX6Uw8xbjRzR50gx5cV8UrSK/view?usp=sharing)
 
 ## 🏢Structure🏢
 
