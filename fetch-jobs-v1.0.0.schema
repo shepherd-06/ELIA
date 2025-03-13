@@ -1,0 +1,94 @@
+openapi: 3.1.0
+info:
+  title: Fetch Jobs API
+  description: API to fetch job listings based on keyword and location.
+  version: 1.0.0
+servers:
+  - url: https://elia-project-453221.lm.r.appspot.com
+    description: Production server
+paths:
+  /crawl/fetch-jobs/:
+    get:
+      operationId: fetchJobs
+      summary: Retrieve job listings based on keyword and location.
+      parameters:
+        - name: keyword
+          in: query
+          description: Job title or keyword to search for.
+          required: true
+          schema:
+            type: string
+            example: "intern"
+        - name: location
+          in: query
+          description: Location for the job search.
+          required: true
+          schema:
+            type: string
+            example: "Finland"
+      responses:
+        "200":
+          description: Successfully retrieved job listings.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  jobs:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: "c-Xpl2d5Zrd6fbthAAAAAA=="
+                        title:
+                          type: string
+                          example: "Analyst Intern"
+                        company:
+                          type: string
+                          example: "Clearwater International"
+                        description:
+                          type: string
+                          example: "Apply for the position by filling in your details and uploading your CV..."
+                        image:
+                          type: string
+                          format: uri
+                          nullable: true
+                          example: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyhNBtfEqYPbMstAze5H6t9ubYbKGhFMFffXOq&s=0"
+                        location:
+                          type: string
+                          example: "Finland"
+                        employmentType:
+                          type: string
+                          example: "Full-time and Internship"
+                        datePosted:
+                          type: string
+                          nullable: true
+                          example: "27 days ago"
+                        salaryRange:
+                          type: string
+                          nullable: true
+                          example: ""
+                        jobProviders:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              jobProvider:
+                                type: string
+                                example: "Fi.indeed.com"
+                              url:
+                                type: string
+                                format: uri
+                                example: "https://fi.indeed.com/viewjob?jk=3bbab295cfcc79a4&utm_campaign=google_jobs_apply..."
+      security:
+        - apiKey: []
+components:
+  schemas: {}
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: API key required for authentication.
