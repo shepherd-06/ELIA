@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,15 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%ywl#7v=4$nc*ajp4tmvbf^re1%3z*qh=brp@5zfa*f!*_=m(c'
+SECRET_KEY = config("SECRET_KEY", None)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1', 'localhost', '0.0.0.0',
-                 'elia-project-453221.lm.r.appspot.com',
-                 'elia-project-453221@appspot.gserviceaccount.com'
                  ]
 
 
