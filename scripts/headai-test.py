@@ -34,7 +34,7 @@ def send_post_request(url, api_key):
     return response.json()
 
 # Example usage
-url = 'https://megatron.headai.com/TextToGraph'  # Replace with the actual URL
-api_key = 'FD2y2ABxIGi9TW4oiDClG3GaDiAP5htO'  # Replace with your actual API key
+url = 'https://megatron.headai.com/TextToGraph' 
+api_key = ''  # Replace with your actual API key
 result = send_post_request(url, api_key)
 print(result)
